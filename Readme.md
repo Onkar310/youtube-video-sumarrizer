@@ -64,10 +64,6 @@ To use the YouTube Video Summarizer:
 
 The YouTube Video Summarizer includes error handling for invalid YouTube links and API errors. If you encounter any issues, you will receive error messages to guide you.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
