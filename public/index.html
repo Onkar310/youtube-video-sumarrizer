@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>YT - Summarizer</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+        <h1>Video - Summarizer</h1>
+      </div>
+    </header>
+    <div class="container">
+      <h2>Summarize any YouTube video<span class="blink">!</span></h2>
+      <div class="form-container">
+        <input
+          type="text"
+          id="video-link"
+          placeholder="Enter a YouTube video link (e.g., https://www.youtube.com/watch?v=VIDEO_ID)"
+        />
+        <div class="loading" id="loading"></div>
+      </div>
+      <div id="error-message" class="error-message">
+        <span class="error-icon">⚠️</span> <span id="error-text"></span>
+      </div>
+      <div class="summary-container">
+        <div id="summary-box" class="summary"></div>
+      </div>
+      <button id="summarize-button">Summarize</button>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; Onkar Sangale 2023</p>
+        <p>This website is a tool for summarizing YouTube videos.</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
