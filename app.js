@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static("/public"));
 app.get("/", (req, res) => {
-  res.send("<h1>Hello</h1>");
+  res.send(express.static("/public"));
 });
 app.post("/openai/get_summary", summary);
 
