@@ -4,10 +4,10 @@ const { summary } = require("./controller/openAiController");
 const app = express();
 
 app.use(express.json());
-app.use(express.static("/public"));
-app.get("/", (req, res) => {
-  res.send(express.static("/public"));
-});
+// app.use(express.static("/public"));
+// app.get("/", (req, res) => {
+//   res.send(express.static("/public"));
+// });
 app.post("/openai/get_summary", summary);
 
 app.listen(process.env.PORT, () => {
