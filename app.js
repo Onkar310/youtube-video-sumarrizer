@@ -9,7 +9,9 @@ app.listen(process.env.PORT, () => {
 
 app.use(express.json());
 app.use(express.static("public"));
-
+app.get("/", (req, res) => {
+  res.send("<h1>Hellow world</h1>");
+});
 app.use("/", express.static("public"));
 
 app.post("/openai/get_summary", summary);
