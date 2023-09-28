@@ -1,6 +1,6 @@
 const express = require("express");
 const { summary } = require("./controller/openAiController");
-
+const path = require("path");
 const app = express();
 
 app.use(express.json());
