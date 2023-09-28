@@ -2,5 +2,5 @@
     "version": 2,
     "name": "yt-summarizer",
     "builds": [{ "src": "app.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
+    "routes": [{ "src": "/openai/get_summary(.*)", "dest": "/app.js" }]
   }
